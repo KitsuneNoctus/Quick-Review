@@ -1,0 +1,15 @@
+{
+  "originHash" : "6aad209aa9a13de66501a6b2c27b89c6aac7a7211e2e801836b1e089d94f3c7a",
+  "pins" : [
+    {
+      "identity" : "stream-chat-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/getstream/stream-chat-swift",
+      "state" : {
+        "revision" : "4cb54e23040f59c35da15e7e2d2eead379d71fbc",
+        "version" : "4.59.0"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -13,6 +13,8 @@
 		BA0F53C42C485B1100239176 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BA0F53C32C485B1100239176 /* Base */; };
 		BA0F53C62C485B1300239176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0F53C52C485B1300239176 /* Assets.xcassets */; };
 		BA0F53C92C485B1300239176 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BA0F53C82C485B1300239176 /* Base */; };
+		BA0F53D22C48606F00239176 /* StreamChat in Frameworks */ = {isa = PBXBuildFile; productRef = BA0F53D12C48606F00239176 /* StreamChat */; };
+		BA0F53D42C48606F00239176 /* StreamChatUI in Frameworks */ = {isa = PBXBuildFile; productRef = BA0F53D32C48606F00239176 /* StreamChatUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0F53D42C48606F00239176 /* StreamChatUI in Frameworks */,
+				BA0F53D22C48606F00239176 /* StreamChat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = ChatDemo;
+			packageProductDependencies = (
+				BA0F53D12C48606F00239176 /* StreamChat */,
+				BA0F53D32C48606F00239176 /* StreamChatUI */,
+			);
 			productName = ChatDemo;
 			productReference = BA0F53B92C485B1100239176 /* ChatDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = BA0F53B02C485B1100239176;
+			packageReferences = (
+				BA0F53D02C48606F00239176 /* XCRemoteSwiftPackageReference "stream-chat-swift" */,
+			);
 			productRefGroup = BA0F53BA2C485B1100239176 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +374,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA0F53D02C48606F00239176 /* XCRemoteSwiftPackageReference "stream-chat-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getstream/stream-chat-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA0F53D12C48606F00239176 /* StreamChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA0F53D02C48606F00239176 /* XCRemoteSwiftPackageReference "stream-chat-swift" */;
+			productName = StreamChat;
+		};
+		BA0F53D32C48606F00239176 /* StreamChatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA0F53D02C48606F00239176 /* XCRemoteSwiftPackageReference "stream-chat-swift" */;
+			productName = StreamChatUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BA0F53B12C485B1100239176 /* Project object */;
 }
