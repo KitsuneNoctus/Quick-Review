@@ -12,6 +12,8 @@
 		BA0F53ED2C48741900239176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0F53EC2C48741900239176 /* Assets.xcassets */; };
 		BA0F53F02C48741900239176 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BA0F53EF2C48741900239176 /* Base */; };
 		BA0F53F82C48756900239176 /* WeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0F53F72C48756900239176 /* WeatherListViewController.swift */; };
+		BA0F53FC2C48765600239176 /* AddWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0F53FB2C48765600239176 /* AddWeatherViewController.swift */; };
+		BA0F53FE2C48767C00239176 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0F53FD2C48767C00239176 /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BA0F53EF2C48741900239176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA0F53F12C48741900239176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA0F53F72C48756900239176 /* WeatherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewController.swift; sourceTree = "<group>"; };
+		BA0F53FB2C48765600239176 /* AddWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherViewController.swift; sourceTree = "<group>"; };
+		BA0F53FD2C48767C00239176 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		BA0F53E22C48741700239176 /* GoodWeather-C1 */ = {
 			isa = PBXGroup;
 			children = (
+				BA0F53FF2C4876E100239176 /* Cells */,
 				BA0F53FA2C4875BF00239176 /* Models */,
 				BA0F53E32C48741700239176 /* AppDelegate.swift */,
 				BA0F53E52C48741700239176 /* SceneDelegate.swift */,
@@ -69,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				BA0F53F72C48756900239176 /* WeatherListViewController.swift */,
+				BA0F53FB2C48765600239176 /* AddWeatherViewController.swift */,
+				BA0F53FD2C48767C00239176 /* SettingsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -78,6 +85,13 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BA0F53FF2C4876E100239176 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA0F53F82C48756900239176 /* WeatherListViewController.swift in Sources */,
+				BA0F53FE2C48767C00239176 /* SettingsTableViewController.swift in Sources */,
+				BA0F53FC2C48765600239176 /* AddWeatherViewController.swift in Sources */,
 				BA0F53E42C48741700239176 /* AppDelegate.swift in Sources */,
 				BA0F53E62C48741700239176 /* SceneDelegate.swift in Sources */,
 			);
@@ -301,7 +317,6 @@
 				INFOPLIST_FILE = "GoodWeather-C1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,9 +326,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.henrycalderon.GoodWeather-C1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -329,7 +348,6 @@
 				INFOPLIST_FILE = "GoodWeather-C1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,9 +357,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.henrycalderon.GoodWeather-C1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
