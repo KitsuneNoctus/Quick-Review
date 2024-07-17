@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import StreamChat
+import StreamChatUI
 
 class ViewController: UIViewController {
 

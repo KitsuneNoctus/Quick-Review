@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import StreamChat
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -17,6 +18,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+//        
+//        guard let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String else {
+//            fatalError("Could not get API Key")
+//        }
+//        guard let secret = Bundle.main.infoDictionary?["SECRET"] as? String else {
+//            fatalError("Could not get SECRET")
+//        }
+//        let config = ChatClientConfig(apiKey: .init(apiKey))
+//        
+//        let userId = "tutorial-user"
+//        let token: Token =  ""
+//        
+//        ChatClient.shared = ChatClient(config: config)
+//        
+//        ChatClient.shared.connectUser(
+//            userInfo: UserInfo(
+//                id:userId,
+//                name: "Tutorial-User",
+//                imageURL: URL(string: "https://bit.ly/2TIt8NR")
+//            ),
+//            token: token)
+//        
+//        let channelList = ViewController()
+//        let query = ChannelListQuery(filter: .containMembers(userIds: [userId]))
+//        channelList.controller
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

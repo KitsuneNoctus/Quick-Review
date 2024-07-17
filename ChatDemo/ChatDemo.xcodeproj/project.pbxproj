@@ -26,6 +26,7 @@
 		BA0F53C52C485B1300239176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA0F53C82C485B1300239176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA0F53CA2C485B1300239176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0F53D62C486BDA00239176 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 				BA0F53C52C485B1300239176 /* Assets.xcassets */,
 				BA0F53C72C485B1300239176 /* LaunchScreen.storyboard */,
 				BA0F53CA2C485B1300239176 /* Info.plist */,
+				BA0F53D62C486BDA00239176 /* Config.xcconfig */,
 			);
 			path = ChatDemo;
 			sourceTree = "<group>";
@@ -179,6 +181,7 @@
 /* Begin XCBuildConfiguration section */
 		BA0F53CB2C485B1300239176 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA0F53D62C486BDA00239176 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -242,6 +245,7 @@
 		};
 		BA0F53CC2C485B1300239176 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA0F53D62C486BDA00239176 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
