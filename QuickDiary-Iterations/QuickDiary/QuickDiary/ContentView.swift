@@ -10,23 +10,35 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @Query private var diaryEntries: [DiaryEntryModel]
     
     
     @State private var entryDetails: String = "..."
 
     var body: some View {
-        VStack {
-        List(entries) { entry in
-                
-            }
-            Form {
-                TextEditor(text: $entryDetails)
-            }
-            Button {
-                print("The info...")
-            } label: {
-                Text("Save")
+        NavigationStack {
+            VStack {
+                List {
+                    ForEach(diaryEntries) { entry in
+                        DiaryListCell(diaryEntry: entry)
+                    }
+//                    .onDelete { indexSet in
+//                        print("delete")
+//                    }
+                }
+                .toolbar {
+                    EditButton()
+                }
+                Form {
+                    TextEditor(text: $entryDetails)
+                }
+                Button {
+                    let diaryEntry = DiaryEntryModel(diaryDetails: entryDetails, diaryDate: Date())
+                    modelContext.insert(diaryEntry)
+                    entryDetails = "..."
+                } label: {
+                    Text("Save")
+                }
             }
         }
     }
@@ -49,5 +61,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: DiaryEntryModel.self, inMemory: true)
 }
