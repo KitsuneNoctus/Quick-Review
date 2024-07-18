@@ -13,6 +13,7 @@
 		BABDE3C42C496FC7000EE1B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABDE3C32C496FC7000EE1B1 /* Assets.xcassets */; };
 		BABDE3C72C496FC7000EE1B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABDE3C62C496FC7000EE1B1 /* Preview Assets.xcassets */; };
 		BABDE3CF2C497229000EE1B1 /* DiaryEntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDE3CE2C497229000EE1B1 /* DiaryEntryModel.swift */; };
+		BABDE3D22C497381000EE1B1 /* DiaryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDE3D12C497381000EE1B1 /* DiaryListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		BABDE3C32C496FC7000EE1B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BABDE3C62C496FC7000EE1B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BABDE3CE2C497229000EE1B1 /* DiaryEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryEntryModel.swift; sourceTree = "<group>"; };
+		BABDE3D12C497381000EE1B1 /* DiaryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		BABDE3BC2C496FC4000EE1B1 /* QuickDiary */ = {
 			isa = PBXGroup;
 			children = (
+				BABDE3D02C49735A000EE1B1 /* Cells */,
 				BABDE3CD2C497215000EE1B1 /* Model */,
 				BABDE3BD2C496FC4000EE1B1 /* QuickDiaryApp.swift */,
 				BABDE3BF2C496FC4000EE1B1 /* ContentView.swift */,
@@ -79,6 +82,14 @@
 				BABDE3CE2C497229000EE1B1 /* DiaryEntryModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BABDE3D02C49735A000EE1B1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BABDE3D12C497381000EE1B1 /* DiaryListCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BABDE3CF2C497229000EE1B1 /* DiaryEntryModel.swift in Sources */,
+				BABDE3D22C497381000EE1B1 /* DiaryListCell.swift in Sources */,
 				BABDE3C02C496FC4000EE1B1 /* ContentView.swift in Sources */,
 				BABDE3C22C496FC4000EE1B1 /* Item.swift in Sources */,
 				BABDE3BE2C496FC4000EE1B1 /* QuickDiaryApp.swift in Sources */,
